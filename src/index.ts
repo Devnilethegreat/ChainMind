@@ -9,3 +9,14 @@ interface ProcessData {
 }
 
 interface ProcessResult {
+  score: number;
+  flagged: boolean;
+  threshold: number;
+}
+
+export class ChainMindCore {
+  private threshold: number;
+
+  constructor(threshold: number = 0.75) {
+    this.threshold = threshold;
+  }
