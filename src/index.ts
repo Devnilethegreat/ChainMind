@@ -31,3 +31,14 @@ export class ChainMindCore {
   process(data: ProcessData): ProcessResult {
     const sc = this.score(data.value, data.velocity, data.count);
     return { score: sc, flagged: sc >= this.threshold, threshold: this.threshold };
+  }
+}
+
+export class ChainMind {
+  private core: ChainMindCore;
+
+  constructor() {
+    const threshold = parseFloat(process.env.THRESHOLD ?? '0.75');
+    this.core = new ChainMindCore(threshold);
+  }
+
