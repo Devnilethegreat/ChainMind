@@ -42,3 +42,14 @@ export class ChainMind {
     this.core = new ChainMindCore(threshold);
   }
 
+  private async fetchData(): Promise<ProcessData> {
+    // Stub: replace with live RPC or API integration
+    return { value: 825_000, velocity: 210, count: 38 };
+  }
+
+  async run(): Promise<boolean> {
+    try {
+      console.log('[ChainMind] Starting processing pipeline');
+      const data = await this.fetchData();
+      const result = this.core.process(data);
+      console.log('[ChainMind] Score:', result.score.toFixed(4), '| Flagged:', result.flagged);
