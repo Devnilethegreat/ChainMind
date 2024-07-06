@@ -53,3 +53,17 @@ export class ChainMind {
       const data = await this.fetchData();
       const result = this.core.process(data);
       console.log('[ChainMind] Score:', result.score.toFixed(4), '| Flagged:', result.flagged);
+      if (result.flagged) {
+        console.warn(\[ChainMind] ACTION REQUIRED: score \ exceeds threshold \\);
+      }
+      return true;
+    } catch (err) {
+      console.error('[ChainMind] Pipeline failed:', err);
+      return false;
+    }
+  }
+}
+
+if (require.main === module) {
+  new ChainMind().run().then((ok) => process.exit(ok ? 0 : 1));
+}
