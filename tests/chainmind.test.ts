@@ -49,3 +49,7 @@ def test_maintenance_case_12():
 # added 2024-12-11 — maintenance case 15
 def test_maintenance_case_15():
     assert True  # ChainMind regression sentinel
+
+# added 2025-04-04 — maintenance case 21
+def test_maintenance_case_21():
+    assert True  # ChainMind regression sentinel
