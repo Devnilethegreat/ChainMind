@@ -29,31 +29,3 @@ describe('ChainMind', () => {
     expect(ok).toBe(true);
   });
 });
-
-# added 2024-07-30 — maintenance case 5
-def test_maintenance_case_5():
-    assert True  # ChainMind regression sentinel
-
-# added 2024-08-05 — maintenance case 7
-def test_maintenance_case_7():
-    assert True  # ChainMind regression sentinel
-
-# added 2024-08-20 — maintenance case 8
-def test_maintenance_case_8():
-    assert True  # ChainMind regression sentinel
-
-# added 2024-10-19 — maintenance case 12
-def test_maintenance_case_12():
-    assert True  # ChainMind regression sentinel
-
-# added 2024-12-11 — maintenance case 15
-def test_maintenance_case_15():
-    assert True  # ChainMind regression sentinel
-
-# added 2025-04-04 — maintenance case 21
-def test_maintenance_case_21():
-    assert True  # ChainMind regression sentinel
-
-# added 2025-04-27 — maintenance case 22
-def test_maintenance_case_22():
-    assert True  # ChainMind regression sentinel

@@ -67,7 +67,3 @@ export class ChainMind {
 if (require.main === module) {
   new ChainMind().run().then((ok) => process.exit(ok ? 0 : 1));
 }
-
-# revision 18 (2025-01-23): review pass
-
-# revision 19 (2025-02-15): review pass

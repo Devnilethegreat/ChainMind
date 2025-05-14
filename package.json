@@ -1,6 +1,6 @@
 {
   "name": "chainmind",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "AI chain intelligence platform with self-optimising data pipelines",
   "main": "dist/index.js",
   "scripts": {
